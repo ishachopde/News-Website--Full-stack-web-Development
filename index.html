@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nutwood Times</title>
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #top-bar {
+      float: left;
+      width: 100%;
+      margin: 0px auto;
+      height: 40px;
+    }
+
+
+
+    #logo {
+      width: 90px;
+      height: 40px; //  margin: 0px 10px 0px 10px;
+      float: left;
+      padding: 3px;
+      margin-right: 20px;
+    }
+
+    #sign-in {
+      font-size: 30px;
+      margin: 10px 15px 5px 10px;
+      float: left; //  border-left: 1px grey solid;
+      //  height: 50px; //  margin: 5px 5px 5px 5px;
+    }
+
+    #signin-image {
+      width: 30px;
+      float: left; //  margin: 10px 15px 5px 20px;
+    }
+
+    #sign-in-text {
+      //  font-weight: bold;
+      font-size: 90%; //margin-left: 30px;
+      position: relative; //  top:1px;
+      padding-right: 10px; //  border-right: 1px grey solid;
+      //  height: 27px;
+    }
+
+    .top-bar-menu {
+      //  font-weight: bold;
+      font-size: 100%; //  padding: 13px 35px 0 35px;
+      margin-left: 10px;
+      margin-right: 40px;
+      margin-top: 1px;
+      top: 25px;
+      height: 27px; //  border-right: 1px grey solid;
+      border-left: 1px grey solid;
+    }
+
+    .top-bar {
+      float: left; // border-left: 1px  solid;
+      height: 28px;
+      padding: 10px; // margin: 30px;
+    }
+
+    #search-box {
+      background-color: #E4E4E4;
+      border: none;
+      font-weight: bold;
+      font-size: 10px;
+      padding: 5px;
+      margin: 5px 0px 5px 5px;
+      float: left;
+      display: block;
+    }
+
+    #glass {
+      width: 20px;
+      margin-top: 5px;
+      position: absolute;
+    }
+
+    #arrow {
+      width: 10px; //  margin-top: 40px;
+      margin-left: 20px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    #nutwood-news-bar {
+      background-color: #80ccff;
+      height: 60px;
+      width: 100%;
+      border-top: 1px solid lightblue;
+    }
+
+
+
+    h1 {
+      float: left;
+      margin: 0;
+      font-size: 40px;
+      font-family: font-family: 'Play', sans-serif;
+      color: white;
+      text-transform: uppercase;
+      margin-top: 0px auto;
+      padding: 5px;
+    }
+
+    #local-news {
+      border: 1px #66d9ff solid;
+      float: right;
+      width: 220px;
+
+      margin: 5px 5px 10px 0px;
+    }
+
+    #local-news a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 5px 0px 0px 25px;
+      position: relative;
+      top: -6px;
+    }
+
+    #local-news a:hover {
+      text-decoration: underline;
+      text-decoration-color: white;
+    }
+
+    #local-news img {
+      width: 30px;
+      height: 30px;
+      margin-right: 30px;
+      margin-top: 5px;
+    }
+
+
+    #nutwood-news-bar-2 {
+      background-color: #66c2ff;
+      width: 100%;
+    }
+
+
+    #nutwood-bar {
+      width: 100%;
+      height: 40px;
+    }
+
+    #nutwood-bar a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      margin-top: 20px;
+      padding: 0 15px;
+      border-right: 1px solid #66d9ff;
+      position: relative;
+      top: 5px;
+    }
+
+    #nutwood-bar a:hover {
+      text-decoration: underline;
+      text-decoration-color: white;
+    }
+
+    #arrow1 {
+      width: 20px; //  margin-top: 40px;
+      margin-left: 20px;
+      position: relative;
+      top: 6px;
+    }
+
+    .more-no-border {
+      border: none !important;
+    }
+
+    #page-container {
+      width: 1100px; //  margin: 0 auto;
+    }
+
+    #main-article {
+      float: left;
+    //  width: 900px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-top: 20px;
+      font-size: 30px;
+      border-bottom: 2px solid #66d9ff;
+      margin-left: 10px;
+      width: 98px;
+    }
+
+    h3 a {
+      font-size: 25px;
+      color: black;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+
+    h3 a:hover {
+      color: #1167a8;
+    }
+
+    #article-summary {
+      color: #5a5a5a;
+      width: 300px;
+      margin-left: 10px;
+      float: left;
+      position: relative;
+      top: -10px;
+      font-size: 20px;
+    }
+
+    .clock {
+      height: 15px;
+      position: relative; //  margin-left: 5px;
+      //top: 2px;
+    }
+
+    #science {
+      text-decoration: none;
+      color: #66d9ff; //  border: 1px solid lightgrey;
+      //padding: 1px;
+    }
+
+    #article-summary a:hover {
+      color: #1167a8;
+    }
+
+    #article-container {
+      float: left;
+      width: 780px;
+      position: relative;
+      top: -18px;
+      border-right: 1px solid #CCCCCC;
+      height: 300px;
+    }
+
+    #article-image {
+      width: 390px;
+      margin-left: 10px;
+      height: 300px;
+    }
+
+    .date {
+      margin-left: 5px;
+    }
+
+    #article-hr {
+      border-top: 1px solid #66d9ff;
+      width: 40px;
+    }
+
+    .article-link {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .article-link:hover {
+      text-decoration: underline;
+      color: #1167a8;
+    }
+
+    #watch-listen {
+      margin-left: 35px;
+    //  width: 310px;
+      float: right;
+      position: relative;
+      top: -350px;
+    }
+
+    .side-news-image-1 {
+      float: left;
+      width: 130px;
+      margin-right: 7px;
+    }
+
+    .watch-listen-link {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .watch-listen-link:hover {
+      //  text-decoration: underline;
+      color: #1167a8; //  margin-left: 5px;
+    }
+
+    h4 {
+      font-size: 25px;
+      font-weight: normal;
+    }
+
+    .side-article {
+      float: right;
+      width: 170px;
+      position: relative;
+      top: -14px;
+    }
+
+    .topic{
+      border-left: 1px solid #CCCCCC;
+      margin-right: 10px;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="top-bar">
+    <img id="logo" src="images/logo.jpg" alt="news">
+    <div id="sign-in"> <img src="images/signin.png" id="signin-image">
+      <span id="sign-in-text">  Sign in </span>
+    </div>
+
+    <div class="top-bar top-bar-menu">
+      News
+    </div>
+
+    <div class="top-bar top-bar-menu">
+      <span class="top-bar-menu-text">  Sport </span>
+    </div>
+
+    <div class="top-bar top-bar-menu">
+      <span class="top-bar-menu-text">  Weather </span>
+    </div>
+
+    <div class="top-bar top-bar-menu">
+      <span class="top-bar-menu-text">  TV </span>
+    </div>
+
+    <div class="top-bar top-bar-menu">
+      More
+      <input type="image" src="images/arrow.png" id="arrow">
+    </div>
+
+    <div class="top-bar">
+      <input id="search-box" type="text" placeholder="Search">
+      <input type="image" src="images/glass.png" id="glass">
+    </div>
+
+    <div class="clear"></div>
+    <div id="nutwood-news-bar">
+      <div id="nutwood-news">
+        <h1> nutwood news</h1>
+        <div id="local-news">
+          <a href="https://news.google.com/news/?ned=us&hl=en">Find local news</a>
+          <img src="images/pointer.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="nutwood-news-bar-2">
+      <div id="nutwood-bar">
+        <a href="">Home</a>
+        <a href="">UK</a>
+        <a href="">World</a>
+        <a href="">Politics</a>
+        <a href="">Business</a>
+        <a href="">Tech</a>
+        <a href="">Science</a>
+        <a href="">Education</a>
+        <a href="">Entertainment</a>
+        <a href="">Health</a>
+        <a class="more-no-border" href="">More</a>
+        <input type="image" src="images/arrow.png" id="arrow1">
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="page-container">
+      <div id="main-article">
+        <h2> Science</h2>
+        <div id="article-container">
+          <h3><a href="">Botanic gardens 'best hope' for saving endangered plants</a></h3>
+          <div id="article-summary">
+            <p>The world's botanic gardens contain a third of all known plants and help protect 40% of endangered ones.</p>
+            <p class="date"> <img class="clock" src="images/clock.PNG"> 18 July 2017 | <a id="science" href=""> Science </a></p>
+            <hr id="article-hr" align="left">
+            <p><a class="article-link" href="http://www.bbc.com/news/science-environment-41366274">Panda's habitat shrinking</a></p>
+            <p><a class="article-link" href="http://www.bbc.com/news/science-environment-41366504">Big Antarctic iceberg edges</a></p>
+          </div>
+          <img id="article-image" src="images/articleimage.PNG">
+        </div>
+      </div>
+
+
+
+      <div class="clear"></div>
+
+      <div id="watch-listen">
+        <h4>Watch/Listen</h4>
+        <img class="side-news-image-1" src="images/side-news.PNG">
+
+        <div class="side-article">
+          <p> <a class="watch-listen-link" href="">Is Puerto Rico part of the U.S?</a></p>
+          <!--  <iframe width="250" height="205" src="https://www.youtube.com/embed/7WbMu0F6XjQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="250" height="205" src="https://www.youtube.com/embed/zlfD5cBMnEM" frameborder="0" allowfullscreen></iframe>
+  -->
+          <p><img class="clock" src="images/clock.PNG"> 18 July 2017 <span class="topic" > </span><a class="article-link" href>Politics</a></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <img class="side-news-image-1" src="images/side-news.PNG">
+        <div class="side-article">
+          <p> <a class="watch-listen-link" href="">Is Puerto Rico part of the U.S?</a></p>
+          <!--  <iframe width="250" height="205" src="https://www.youtube.com/embed/7WbMu0F6XjQ" frameborder="0" allowfullscreen></iframe>
+  <iframe width="250" height="205" src="https://www.youtube.com/embed/zlfD5cBMnEM" frameborder="0" allowfullscreen></iframe>
+    -->
+          <p><img class="clock" src="images/clock.PNG"> 18 July 2017 <span class="topic" ></span> <a class="article-link" href>Politics</a></p>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
